@@ -1,0 +1,553 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Poppins";
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.main-container .landingpage {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.main-container .landingpage header {
+  height: 90px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .landingpage header .logo {
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: .5rem;
+  position: relative;
+}
+
+.main-container .landingpage header .logo::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 78%;
+  left: 2%;
+  top: 70%;
+  background: goldenrod;
+  opacity: .5;
+}
+
+.main-container .landingpage header .logo h1 {
+  font-family: var(--main-font);
+  font-size: 40px;
+  text-transform: uppercase;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+}
+
+.main-container .landingpage header .logo span {
+  padding-left: 0.5rem;
+  height: 40%;
+  width: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-container .landingpage header .logo span h5 {
+  font-family: var(--main-font);
+  font-size: 15x;
+  color: goldenrod;
+  font-weight: lighter;
+}
+
+.main-container .landingpage header .search {
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .landingpage header .search form {
+  height: 50%;
+  width: 70%;
+}
+
+.main-container .landingpage header .search form input {
+  height: 100%;
+  width: 80%;
+  font-size: 22px;
+  font-family: urbanist;
+  border: solid 1px goldenrod;
+}
+
+.main-container .landingpage header .search form button {
+  height: 100%;
+  width: 20%;
+  font-family: urbanist;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  background: goldenrod;
+  color: white;
+  font-weight: bolder;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.main-container .landingpage header .search form button:hover {
+  background: black;
+}
+
+.main-container .landingpage .hero {
+  height: 85%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .landingpage .hero .mealOne {
+  height: 90%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .landingpage .hero .mealOne .imageone {
+  height: 100%;
+  width: 60%;
+  background: url("../media/meals/one.jpg") center;
+  background-size: cover;
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
+
+.main-container .landingpage .hero .mealOne .intro {
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 90%;
+  width: 35%;
+}
+
+.main-container .landingpage .hero .mealOne .intro .intro-text {
+  height: 60%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .landingpage .hero .mealOne .intro .intro-text h2 {
+  font-family: var(--main-font);
+  font-size: 35px;
+  padding-left: 0.5rem;
+  -webkit-text-decoration: underline goldenrod;
+          text-decoration: underline goldenrod;
+}
+
+.main-container .landingpage .hero .mealOne .intro .intro-text span {
+  height: 70%;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .landingpage .hero .mealOne .intro .intro-text span p {
+  font-family: var(--main-font);
+  font-size: 25px;
+}
+
+.main-container .landingpage .hero .mealOne .intro .imagetwo {
+  margin: 0 auto;
+  height: 40%;
+  width: 80%;
+  background: url("../media/meals/two.jpg") center;
+  background-size: cover;
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
+
+.main-container .section-two {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+}
+
+.main-container .section-two main {
+  height: 88%;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.main-container .section-two main .salad-and-soup {
+  height: 100%;
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .section-two main .salad-and-soup .saladcontainer,
+.main-container .section-two main .salad-and-soup .soupcontainer {
+  height: 48%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem 0;
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  position: relative;
+}
+
+.main-container .section-two main .salad-and-soup .saladcontainer h3,
+.main-container .section-two main .salad-and-soup .soupcontainer h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  width: 70%;
+  font-family: urbanist;
+  color: white;
+  position: absolute;
+  opacity: 1;
+  padding: 1rem;
+  font-size: 23px;
+  -webkit-filter: drop-shadow(20px 20px 20px black);
+          filter: drop-shadow(20px 20px 20px black);
+}
+
+.main-container .section-two main .salad-and-soup .saladcontainer {
+  justify-self: flex-end;
+  background: url("../media/meals/three.jpg") center;
+  background-size: cover;
+}
+
+.main-container .section-two main .salad-and-soup .soupcontainer {
+  background: url("../media/meals/four.jpg") center;
+  background-size: cover;
+}
+
+.main-container .section-two main .quickmeals {
+  height: 97%;
+  width: 35%;
+  padding-left: 2rem;
+}
+
+.main-container .section-two main .quickmeals h4 {
+  font-family: var(--main-font);
+  font-size: 23px;
+  text-align: center;
+  height: 15%;
+  width: 100%;
+  -webkit-text-decoration: underline  2px goldenrod;
+          text-decoration: underline  2px goldenrod;
+}
+
+.main-container .section-two main .quickmeals ul {
+  height: 85%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .section-two main .quickmeals ul li {
+  list-style: none;
+  height: 25%;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.main-container .section-two main .quickmeals ul li div {
+  height: 100%;
+  width: 30%;
+}
+
+.main-container .section-two main .quickmeals ul #one div {
+  background: url("../media/meals/five.jpg") center;
+  background-size: cover;
+}
+
+.main-container .section-two main .quickmeals ul #two div {
+  background: url("../media/meals/six.jpg") center;
+  background-size: cover;
+}
+
+.main-container .section-two main .quickmeals ul #three div {
+  background: url("../media/meals/seven.jpg") center;
+  background-size: cover;
+}
+
+.main-container .section-two main .quickmeals ul #four div {
+  background: url("../media/meals/eight.jpg") center;
+  background-size: cover;
+}
+
+.main-container .section-three {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: black;
+  color: white;
+  font-family: urbanist;
+}
+
+.main-container .section-three h1 {
+  font-size: 45px;
+  height: 15%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-text-decoration: underline 2px goldenrod;
+          text-decoration: underline 2px goldenrod;
+}
+
+.main-container .section-three .cards-container {
+  height: 85%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .section-three .cards-container .location-card {
+  height: 90%;
+  width: 23%;
+  position: relative;
+}
+
+.main-container .section-three .cards-container .location-card h2 {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  padding: .5rem;
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
+}
+
+.main-container .section-three .cards-container .location-card img {
+  height: inherit;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
+}
+
+.main-container footer {
+  height: 35%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--main-font);
+  background: black;
+}
+
+.main-container footer h1 {
+  font-size: 45px;
+  color: white;
+  -webkit-text-decoration: underline 2px goldenrod;
+          text-decoration: underline 2px goldenrod;
+}
+
+.main-container footer .socials {
+  color: white;
+  height: 90%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container footer .socials div {
+  height: auto;
+  width: 30%;
+  margin: .5rem;
+}
+
+.main-container footer .socials div h5 {
+  opacity: .4;
+}
+
+.main-container footer .socials div h2 {
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

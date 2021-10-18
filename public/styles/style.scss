@@ -1,0 +1,365 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-font: "Poppins";
+}
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin dimension($height, $width) {
+  height: $height;
+  width: $width;
+}
+#root {
+  @include dimension(100vh, 100%);
+}
+
+.main-container {
+  @include dimension(100%, 100%);
+  background: black;
+  // landing page styling
+  .landingpage {
+    @include dimension(100%, 100%);
+    background-color: black;
+    position: relative;
+
+    // styling for recipe container 
+
+    // .recipe_container {
+    //   @include dimension(60%,100% );
+    //   background:white;
+    //   position: absolute;
+    // }
+
+    header {
+      @include dimension(90px, 100%);
+    //   background: white;
+      @include flex(space-between, center);
+
+      .logo {
+        @include dimension(100%, 40%);
+        display: flex;
+        align-items: center;
+        padding-left: .5rem;
+        position: relative;
+      
+        &::after {
+            content: '';
+            position: absolute;
+            @include dimension(1px, 78%);
+            left: 2%;
+            top:70%;
+            background:goldenrod;
+            opacity: .5;
+        }
+
+        h1 {
+          font-family: var(--main-font);
+          font-size: 40px;
+          text-transform: uppercase;
+          justify-content: flex-start;
+          color: white;
+        }
+        span {
+          padding-left: 0.5rem;
+          @include dimension(40%, auto);
+          justify-content: flex-end;
+          @include flex(center, flex-end);
+
+          h5 {
+            font-family: var(--main-font);
+            font-size: 15x;
+            color: goldenrod;
+            font-weight: lighter;
+          }
+        }
+      }
+      .search {
+        @include dimension(100%, 60%);
+        @include flex(center, center);
+
+        form {
+          @include dimension(50%, 70%);
+
+          input {
+            @include dimension(100%, 80%);
+            font-size: 22px;
+            font-family: urbanist;
+            border: solid 1px goldenrod;
+          }
+          button {
+            @include dimension(100%, 20%);
+            font-family: urbanist;
+            font-size: 20px;
+            cursor: pointer;
+            border: 0;
+            background: goldenrod;
+            color: white;
+            font-weight: bolder;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+              background: black;
+            }
+          }
+        }
+      }
+    }
+
+    //hero styling
+
+    .hero {
+      @include dimension(85%, 100%);
+      @include flex(center, center);
+
+      .mealOne {
+        @include dimension(90%, 90%);
+        @include flex(center, center);
+
+        .imageone {
+          @include dimension(100%, 60%);
+          background: url("../media/meals/one.jpg") center;
+          background-size: cover;
+          filter: opacity(0.7);
+        }
+        .intro {
+          color: white;
+          align-self: flex-end;
+          @include dimension(90%, 35%);
+
+          .intro-text {
+            @include dimension(60%, 100%);
+            @include flex(flex-start, center);
+            flex-direction: column;
+
+            h2 {
+              font-family: var(--main-font);
+              font-size: 35px;
+              padding-left: 0.5rem;
+              text-decoration: underline goldenrod;
+            }
+            span {
+              @include dimension(70%, 65%);
+              @include flex(center, center);
+
+              p {
+                font-family: var(--main-font);
+                font-size: 25px;
+              }
+            }
+          }
+          .imagetwo {
+            margin: 0 auto;
+            @include dimension(40%, 80%);
+            background: url("../media/meals/two.jpg") center;
+            background-size: cover;
+            filter: opacity(0.7);
+          }
+        }
+      }
+    }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  }
+
+  // section two styling
+  .section-two {
+    @include dimension(100%, 100%);
+    @include flex(center, center);
+
+    background: black;
+
+    main {
+      @include dimension(88%, 85%);
+      @include flex(center, center);
+      color:white;
+
+      .salad-and-soup {
+        @include dimension(100%, 65%);
+        @include flex(center, space-around);
+        flex-direction: column;
+
+        .saladcontainer,
+        .soupcontainer {
+          @include dimension(48%, 100%);
+          @include flex(center, center);
+          margin: 0.5rem 0;
+          filter: opacity(0.9);
+          position: relative;
+
+          h3 {
+            @include flex(center, center);
+            @include dimension(50%, 70%);
+            font-family: urbanist;
+            color: white;
+            position: absolute;
+            opacity: 1;
+            padding: 1rem;
+            font-size: 23px;
+            filter: drop-shadow(20px 20px 20px black);
+          }
+        }
+        .saladcontainer {
+          justify-self: flex-end;
+          background: url("../media/meals/three.jpg") center;
+          background-size: cover;
+        }
+        .soupcontainer {
+          background: url("../media/meals/four.jpg") center;
+          background-size: cover;
+        }
+      }
+      .quickmeals {
+        @include dimension(97%, 35%);
+        padding-left: 2rem;
+        h4 {
+          font-family: var(--main-font);
+          font-size: 23px;
+          text-align: center;
+          @include dimension(15%, 100%);
+          text-decoration: underline  2px goldenrod;
+    
+        }
+        ul {
+          @include dimension(85%, 100%);
+          @include flex(space-between, center);
+          flex-direction: column;
+
+          li {
+            list-style: none;
+            @include dimension(25%, 100%);
+            padding: 0.5rem;
+
+            div {
+              @include dimension(100%, 30%);
+            }
+          }
+          #one {
+            div {
+              background: url("../media/meals/five.jpg") center;
+
+              background-size: cover;
+            }
+          }
+          #two {
+            div {
+              background: url("../media/meals/six.jpg") center;
+
+              background-size: cover;
+            }
+          }
+          #three {
+            div {
+              background: url("../media/meals/seven.jpg") center;
+
+              background-size: cover;
+            }
+          }
+          #four {
+            div {
+              background: url("../media/meals/eight.jpg") center;
+
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //section three styling 
+  .section-three {
+      @include dimension(100%,100% );
+      @include flex(center,space-between );
+      flex-direction: column;
+      background: black;
+         color:white;
+         font-family: urbanist;
+
+    
+
+      h1 {
+          font-size: 45px;
+          @include dimension(15%,100% );
+         @include flex(center,center );
+         text-decoration: underline 2px goldenrod;
+      }
+      .cards-container {
+          @include dimension(85%,100% );
+          @include flex(space-evenly,center );
+
+
+        .location-card {
+            @include dimension(90%,23% );
+            position: relative;
+
+
+            h2 {
+                @include dimension(10%,100% );
+                position: absolute;
+                bottom: 80px;
+                padding: .5rem;
+                filter: opacity(.6);
+
+                
+            }
+            img {
+                @include dimension(inherit,100% );
+                object-fit: cover;
+                filter: opacity(.7);
+            }
+        }
+      }
+  }
+  
+//   foooter styling 
+
+footer {
+    @include dimension(35%,100% );
+    @include flex(center,center);
+    flex-direction: column;
+    font-family: var(--main-font);
+    background: black;
+
+    h1 {
+        font-size: 45px;
+        color:white;  
+        text-decoration: underline 2px goldenrod;
+    }
+    .socials {
+        color: white;
+        @include dimension(90%,100% );
+        @include flex(center,center);
+        flex-direction: column;
+
+        div {
+            @include dimension(auto,30% );
+            margin: .5rem;
+            
+            h5 {
+                opacity: .4;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+}
